@@ -2,14 +2,18 @@
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
+    margin: 0;
 }
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .container{
     background-color: #ffffff;
     width: 870px;
+    border-radius: 5px solid;
+    margin-top: 21px;
     padding-bottom: 40px;
 }
 
@@ -74,4 +78,48 @@ hr{
     color: #562EFF;
     font-weight: 400px;
     text-decoration: none;
+}
+
+/* ---------------------
+    Latest Course Style 
+---------------------- */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-left: 30px;
+}
+ .course{ 
+    width: 254px;
+}
+.course-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.course .course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.fa-star.filled{
+    color:  #FFC014;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+.course-duration{
+    width: 90px;
+   
+}
+.course-duration p, i{
+    background-color: #FFE4E8;
+    border-radius: 15px;
+    color: #FF4A60;
+}
+.course-duration i{
+    padding-left: 4px;
+}
+.course-author{
+    font-size: 14px;
+    color: #ED6B4F;
 }
